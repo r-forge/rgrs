@@ -17,7 +17,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title><?php echo $group_name; ?></title>
+	<title>Rgrs - R for french sociologists</title>
 	<link href="<?php echo $themeroot; ?>styles/estilo1.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -29,23 +29,15 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <a href="/"><img src="<?php echo $themeroot; ?>/images/logo.png" border="0" alt="R-Forge Logo" /> </a> </td> </tr>
 </table>
 
+<h1>Welcome to the Rgrs project page</h1>
 
-<!-- get project title  -->
-<!-- own website starts here, the following may be changed as you like -->
+<p>Useful links&nbsp;:</p>
 
-<?php if ($handle=fopen('http://'.$domain.'/export/projtitl.php?group_name='.$group_name,'r')){
-$contents = '';
-while (!feof($handle)) {
-	$contents .= fread($handle, 8192);
-}
-fclose($handle);
-echo $contents; } ?>
-
-<!-- end of project description -->
-
-<p> No content added. </p>
-
-<p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
+<ul>
+  <li><a href="http://r-forge.r-project.org/projects/rgrs/">R-forge project summary page</a></li>
+  <li><a href="http://perso.ens-lsh.fr/jbarnier/rgrs/">French project page</a></li>
+  <li><a href="http://rgrs.r-forge.r-project.org/rgrs.pdf">PDF documentation</a></li>
+</ul>
 
 </body>
 </html>
