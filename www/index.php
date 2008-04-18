@@ -35,7 +35,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
 <ul>
   <li><a href="http://r-forge.r-project.org/projects/rgrs/">R-forge project summary page</a></li>
-  <li><a href="http://perso.ens-lsh.fr/jbarnier/rgrs/">French project page</a></li>
+  <li><a href="http://perso.ens-lsh.fr/jbarnier/rgrs.html">French project page</a></li>
   <li><a href="http://rgrs.r-forge.r-project.org/rgrs.pdf">PDF documentation</a></li>
 </ul>
 
