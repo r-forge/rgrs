@@ -1,14 +1,17 @@
 `freq` <-
-function (var, digits=1, cum=FALSE, exclude=NULL) {
+function (var, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL) {
   tab <- table(var, exclude=exclude)
-  eff <- as.vector(tab)
-  pourc <- as.vector(eff/sum(eff)*100)
-  result <- data.frame(n=eff, pourc=pourc)
+  effectifs <- as.vector(tab)
+  pourc <- as.vector(effectifs/sum(effectifs)*100)
+  if (eff) result <- data.frame(n=effectifs, pourc=pourc)
+  else result <- data.frame(pourc=pourc)
+  rownames(result) <- ifelse(is.na(names(tab)),"NA",names(tab))
+  if (total) result <- rbind(result, Total=apply(result,2,sum))
   if (cum) {
     pourc.cum <- cumsum(pourc)
+    if (total) pourc.cum <- c(pourc.cum, 100)
     result <- cbind(result, pourc.cum)
   }
-  rownames(result) <- ifelse(is.na(names(tab)),"NA",names(tab))
   round(result, digits=digits)
 }
 
