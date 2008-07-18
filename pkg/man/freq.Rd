@@ -26,7 +26,6 @@ freq(var, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL)
   variables, et dont les colonnes sont les effectifs, le pourcentage et
   (si demandé) le pourcentage cumulé de ces modalités.
 }
-\references{ Pas pour l'instant... }
 \seealso{  \code{\link{table}}, \code{\link{prop}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{

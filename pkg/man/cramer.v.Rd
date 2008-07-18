@@ -19,7 +19,6 @@ cramer.v(tab)
 \value{
   Valeur du V pour le tableau.
 }
-\references{ Pas pour l'instant... }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{
 v1 <- factor(round(runif(500,1,4)))

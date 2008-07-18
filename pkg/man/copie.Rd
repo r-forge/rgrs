@@ -39,7 +39,6 @@ copie(obj, append=FALSE, file=FALSE, filename="temp.html",...)
   travail. On peut ensuite l'intégrer directement dans Microsoft Word ou
   OpenOffice Writer via le menu Insertion > Fichier.
 }
-\references{ Pas pour l'instant... }
 \seealso{  \code{\link[R2HTML]{HTML}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{

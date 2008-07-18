@@ -23,7 +23,6 @@ quant.cut(var, nbclass, include.lowest=TRUE, right=FALSE, dig.lab=5, ...)
 \value{
   Renvoit un vecteur de type factor généré par cut
 }
-\references{ Pas pour l'instant... }
 \seealso{  \code{\link{cut}}, \code{\link{quantile}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{
