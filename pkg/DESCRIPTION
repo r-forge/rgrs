@@ -1,8 +1,8 @@
 Package: rgrs
 Type: Package
 Title: Fonctions pour faciliter l'usage de R en sciences sociales
-Version: 0.1-4
-Date: 2008-07-17
+Version: 0.1-5
+Date: 2008-07-18
 Author: Julien Barnier
 Maintainer: Julien Barnier <julien.barnier@ens-lsh.fr>
 Description: Ces fonctions sont avant tout utilisées en interne par les membres du GRS (Groupe de Recherche sur la Socialisation) 

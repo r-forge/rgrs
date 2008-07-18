@@ -8,5 +8,7 @@ function() {
   else {
     install.packages("rgrs",repos="http://r-forge.r-project.org")
     cat("Mise a jour effectuee\n")
+    detach(package:rgrs)
+    library(rgrs)
   }
 }
