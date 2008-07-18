@@ -6,9 +6,9 @@ function() {
   cat("Version de rgrs disponible sur r-forge :", remote.rgrs.version, "\n")
   if (installed.rgrs.version == remote.rgrs.version) cat("Pas de nouvelle version a installer\n")
   else {
+    detach(package:rgrs)
     install.packages("rgrs",repos="http://r-forge.r-project.org")
     cat("Mise a jour effectuee\n")
-    detach(package:rgrs)
     library(rgrs)
   }
 }
