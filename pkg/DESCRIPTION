@@ -8,4 +8,4 @@ Maintainer: Julien Barnier <julien.barnier@ens-lsh.fr>
 Description: Ces fonctions sont avant tout utilisées en interne par les membres du GRS (Groupe de Recherche sur la Socialisation) 
 License: GPL-3
 Encoding: UTF-8
-Suggests: R2HTML
+Depends: R2HTML
