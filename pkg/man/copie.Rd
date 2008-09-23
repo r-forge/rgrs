@@ -16,7 +16,7 @@ copie(obj, append=FALSE, file=FALSE, filename="temp.html",...)
   \item{append}{ si FALSE (par défaut), remplace le contenu du
     presse-papier ou du fichier par le résultat. Si TRUE, ajoute le
     résultat à la suite du contenu du presse-papier ou du fichier }
-  \item{file}{ si FALSE (par défaut, exporte dans le presse-papier. Si
+  \item{file}{ si FALSE (par défaut), exporte dans le presse-papier. Si
     TRUE, exporte dans le fichier filename }
   \item{filename}{ nom du fichier dans lequel exporter l'objet, si
     file=TRUE }
