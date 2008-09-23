@@ -1,5 +1,6 @@
 `freq` <-
 function (var, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL) {
+  if (is.factor(var)) var <- factor(var, exclude=exclude)
   tab <- table(var, exclude=exclude)
   effectifs <- as.vector(tab)
   pourc <- as.vector(effectifs/sum(effectifs)*100)
