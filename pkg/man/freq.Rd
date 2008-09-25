@@ -4,14 +4,15 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Retourne le tri à plat d'une variable }
 \description{
-  Cette fonction retourne et affiche le tri à plat d'une variable (vecteur).
+  Cette fonction affiche le tri à plat d'une variable (vecteur).
 }
 \usage{ 
-freq(var, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL)
+freq(x, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{var}{ vecteur pour lequel on souhaite obtenir le tri à plat }
+  \item{x}{ vecteur pour lequel on souhaite obtenir le tri à plat ou
+    tableau de dimension 1}
   \item{digits}{ nombre de chiffres à conserver après la virgule }
   \item{eff}{ si TRUE, affiche les effectifs }
   \item{cum}{ si TRUE, affiche les pourcentages cumulés }
@@ -19,7 +20,10 @@ freq(var, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL)
   \item{exclude}{ valeurs à exclure du tri à plat (aucune par défaut) }
 }
 \details{
-  Le tableau croisé passé en argument est un objet de type table.
+  L'objet x est soit un vecteur, dans ce cas le tri à plat est calculé à
+  l'aide de la fonction table, soit déjà un tri à plat, c'est-à-dire une
+  table à une dimension, dans ce cas c'est cette table qui est utilisée
+  telle quelle.
 }
 \value{
   Un data frame dont les noms de lignes sont les modalités de la
@@ -37,5 +41,7 @@ freq(v, exclude=c(1,2,NA))
 freq(v, digits=3)
 freq(v, eff=FALSE)
 freq(v, total=TRUE)
+tab <- table(v)
+freq(tab)
 }
 \keyword{univar}

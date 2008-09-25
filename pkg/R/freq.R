@@ -1,7 +1,8 @@
 `freq` <-
-function (var, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL) {
-  if (is.factor(var)) var <- factor(var, exclude=exclude)
-  tab <- table(var, exclude=exclude)
+function (x, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL) {
+  if (is.factor(x)) x <- factor(x, exclude=exclude)
+  if (is.table(x)) tab <- x
+  else tab <- table(x, exclude=exclude)
   effectifs <- as.vector(tab)
   pourc <- as.vector(effectifs/sum(effectifs)*100)
   if (eff) result <- data.frame(n=effectifs, pourc=pourc)
