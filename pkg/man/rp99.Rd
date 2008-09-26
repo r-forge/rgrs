@@ -7,6 +7,6 @@
   communes du Rhône.
 }
 \usage{data(rp99)}
-\format{Data frame comportant 301  lignes et 22 colonnes}
+\format{Data frame comportant 301  lignes et 21 colonnes}
 \source{Bases de données recensement de l'INSEE : \url{http://www.insee.fr/fr/bases-de-donnees/default.asp?page=recensements.htm}}
 \keyword{datasets}
