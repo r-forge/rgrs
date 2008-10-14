@@ -7,7 +7,7 @@
   Cette fonction affiche le tri à plat d'une variable (vecteur).
 }
 \usage{ 
-freq(x, digits=1, eff=TRUE, cum=FALSE, total=FALSE, exclude=NULL, sort="")
+freq(x, digits=1, cum=FALSE, total=FALSE, exclude=NULL, sort="")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

@@ -11,9 +11,9 @@
   Fonctions calculant différents pourcentages d'un tableau croisé
 }
 \usage{
-       cprop(tab, digits = 1, add.tot = TRUE)
-       lprop(tab, digits = 1, add.tot = TRUE)
-       prop(tab, digits = 1, add.tot = TRUE)
+       cprop(tab, digits = 1, total = TRUE)
+       lprop(tab, digits = 1, total = TRUE)
+       prop(tab, digits = 1, total = TRUE)
        thprop(tab, digits = 1)
        theff(tab, digits = 2)
        residus(tab, digits = 2)
@@ -21,7 +21,7 @@
 \arguments{
   \item{tab}{ Tableau croisé (objet de type table) }
   \item{digits}{ Nombre de chiffres après la virgule à conserver }
-  \item{add.tot}{ Ajouter des lignes/colonnes pour les marges du tableau }
+  \item{total}{ Ajouter des lignes/colonnes pour les marges du tableau }
 }
 \details{
   Ces fonctions calculent les profils lignes ou colonnes d'un tableau croisé
