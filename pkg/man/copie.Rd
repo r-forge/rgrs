@@ -1,6 +1,7 @@
 \encoding{UTF-8}
 \name{copie}
 \alias{copie}
+\alias{copie.default}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Export d'un objet au format HTML }
 \description{
@@ -8,7 +9,8 @@
   R2HTML, puis le place dans le presse-papier ou dans un fichier.
 }
 \usage{
-copie(obj, append=FALSE, file=FALSE, filename="temp.html",...)
+copie(obj, ...)
+\method{copie}{default}(obj, append=FALSE, file=FALSE, filename="temp.html",...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -39,7 +41,7 @@ copie(obj, append=FALSE, file=FALSE, filename="temp.html",...)
   travail. On peut ensuite l'intégrer directement dans Microsoft Word ou
   OpenOffice Writer via le menu Insertion > Fichier.
 }
-\seealso{  \code{\link[R2HTML]{HTML}} }
+\seealso{  \code{\link[R2HTML]{HTML}}, \code{\link[rgrs]{copie.proptab}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{
 data(iris)
