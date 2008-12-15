@@ -7,4 +7,3 @@ function() {
   cat("Pour automatiser ce changement dans un script, utilisez :\n")
   cat("setwd(\"",wd,"\")\n",sep="")
 }
-  

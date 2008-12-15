@@ -1,5 +1,6 @@
 `genere.tableau` <-
 function (x, ...) {
+  require(odfWeave)
   if (is.matrix(x)) {
     return(odfWeave::odfTable.matrix(x, ...))
   }

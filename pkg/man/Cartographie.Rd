@@ -1,0 +1,105 @@
+\encoding{UTF-8}
+\name{Cartographie}
+\alias{carte.prop.legende}
+\alias{carte.eff.legende}
+\alias{carte.qual.legende}
+\alias{carte.prop}
+\alias{carte.eff}
+\alias{carte.qual}
+\alias{carte.labels}
+\title{ Représentations cartographiques simples }
+\description{
+  Fonctions permettant la représentation cartographique simple de
+  données de type proportions (\code{carte.prop}), effectifs
+  (\code{carte.eff}) ou qualitatif (\code{carte.qual}).
+}
+\usage{
+carte.prop(sp, data, varname, sp.key="id", data.key="id", diverg=FALSE,
+           nbcuts=6, at=NULL, main="", sub=NULL, posleg="topleft",
+           palette.pos="Reds", palette.neg="Blues", palette=NULL, ...)
+
+carte.eff(sp, data, varname, sp.key="id", data.key="id", nbcuts=4,
+          at=NULL, main="", sub=NULL, posleg="topleft", col.bg="red",
+          col.border="white", cex=5, pch=21, plot.polygons=TRUE, ...)
+
+carte.qual(sp, data, varname, sp.key="id", data.key="id", main="", sub=NULL,
+           posleg="topleft",  palette.qual="Set3", palette=NULL, ...)
+
+carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
+             outline=FALSE, outline.decal=1, outline.col="white")
+}
+\arguments{
+  
+  \item{sp}{objet spatial, de classe \code{SpatialPolygonsDataFrame}.}
+  \item{data}{tableau de données contenant la variable à représenter.}
+  \item{varname}{nom de la variable à représenter (sous forme de chaîne
+    de caractère).}
+  \item{sp.key}{nom de la variable de jointure de l'objet spatial.}
+  \item{data.key}{nom de la variable de jointure du tableau de données.}
+  \item{diverg}{si TRUE, les données comportent à la fois des valeurs
+    positives et négatives, à représenter dans des schémas de couleur
+    différents.}
+  \item{nbcuts}{nombre de classes de valeurs pour la légende
+    (\code{carte.eff}) et pour les couleurs (\code{carte.prop}).}
+  \item{at}{bornes des classes de valeurs pour la légende
+    (\code{carte.eff}) et pour les couleurs (\code{carte.prop}).}
+  \item{main}{titre de la carte.}
+  \item{sub}{sous-titre de la carte.}
+  \item{posleg}{position de la légende, à indiquer de la même manière
+    que pour \code{legend}.}
+  \item{col.bg}{couleur des symboles pour \code{carte.eff}.}
+  \item{col.border}{couleur de la bordure des symboles pour
+    \code{carte.eff}.}
+  \item{cex}{facteur d'agrandissement des symboles (\code{carte.eff}) ou
+    des labels (\code{carte.labels}).}
+  \item{pch}{type de symbole pour \code{carte.eff}.}
+  \item{plot.polygons}{si FALSE, le contenu de l'objet spatial
+    (polygones) n'est pas affiché.}
+  \item{palette.pos}{nom de la palette à utiliser pour les classes de
+    valeurs positives. Chaîne de caractère transmise à RColorBrewer (voir   
+    Details).}
+  \item{palette.neg}{nom de la palette à utiliser pour les classes de valeurs
+    négatives. Chaîne de caractère transmise à RColorBrewer (voir
+    Details).}
+  \item{palette.qual}{nom de la palette à utiliser pour les
+    catégories. Chaîne de caractère transmise à RColorBrewer (voir
+    Details).}
+  \item{palette}{palette de couleur spécifiée manuellement.}
+  \item{labels}{vecteur de chaines de caractère contenant les labels à écrire.}  
+  \item{coords}{coordonnées de positionnement des labels. Si NULL, les
+  coordonnées sont calculées en fonction de la forme de chaque polygone.}
+  \item{col}{couleur des labels.}
+  \item{font}{type de police utilisée pour les labels. Voir \code{\link{par}}.}
+  \item{outline}{si TRUE, une bordure est affichée autour des labels.} 
+  \item{outline.decal}{décalage à utiliser pour les bordures de labels.}
+  \item{outline.col}{couleur pour les bordures de labels.}   
+  \item{...}{paramètres supplémentaires passés à \code{spplot}.}
+}
+\details{
+  Pour la manière de spécifier des palettes à RColorBrewer, on pourra
+  utiliser l'outil interactif à l'adresse http://colorbrewer.org, les
+  noms de palette sont les mêmes. Si vous utilisez une des palettes du
+  site, les auteurs du projet apprécient que celui-ci soit cité.
+
+  Si le nombre de classes de valeurs est trop élevé, il se peut que la
+  palette spécifiée ne dispose pas de suffisamment de couleurs. Il faut
+  alors soit réduire le nombre de classes, soit choisir une autre
+  palette, soit spécifier une palette manuellement.
+}
+\value{
+  Affiche la carte et la légende correspondantes. Ne retourne pas de
+  valeur particulière.
+}
+\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\seealso{ \code{\link[sp]{spplot}}, \code{\link{legend}},
+  \code{\link[RColorBrewer]{brewer.pal}}, \code{\link{palette}}, \code{\link{par}} }
+\examples{
+data(lyon)
+data(rp99)
+
+
+
+
+}
+\keyword{hplot}
+\keyword{spatial}
