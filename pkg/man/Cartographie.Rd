@@ -15,7 +15,7 @@
 }
 \usage{
 carte.prop(sp, data, varname, sp.key="id", data.key="id", diverg=FALSE,
-           nbcuts=6, at=NULL, main="", sub=NULL, posleg="topleft",
+           nbcuts=6, at=NULL, at.lim=FALSE, main="", sub=NULL, posleg="topleft",
            palette.pos="Reds", palette.neg="Blues", palette=NULL, ...)
 
 carte.eff(sp, data, varname, sp.key="id", data.key="id", nbcuts=4,
@@ -43,6 +43,9 @@ carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
     (\code{carte.eff}) et pour les couleurs (\code{carte.prop}).}
   \item{at}{bornes des classes de valeurs pour la légende
     (\code{carte.eff}) et pour les couleurs (\code{carte.prop}).}
+  \item{at.lim}{si TRUE, les valeurs minimum et maximum sont ajoutées si
+    besoin aux intervalles donnés via l'option \code{at} pour
+    \code{carte.prop}.}
   \item{main}{titre de la carte.}
   \item{sub}{sous-titre de la carte.}
   \item{posleg}{position de la légende, à indiquer de la même manière
@@ -97,6 +100,7 @@ carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
 data(lyon)
 data(rp99)
 
+require(sp)
 plot(lyon)
 
 carte.prop(lyon, rp99, "tx.chom", sp.key="DepCom", data.key="code")
