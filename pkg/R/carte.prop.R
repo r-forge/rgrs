@@ -1,9 +1,17 @@
 `carte.prop` <-
-function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, nbcuts=6, at=NULL, main="", sub=NULL, posleg="topleft", palette.pos="Reds", palette.neg="Blues", palette=NULL, ...) {
+function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, nbcuts=6, at=NULL, at.lim=FALSE, main="", sub=NULL, posleg="topleft", palette.pos="Reds", palette.neg="Blues", palette=NULL, ...) {
   tmp <- data[,c(data.key, varname)]
+  require(sp)
+  require(RColorBrewer)
   sp@data <- merge(sp@data, tmp, by.x=sp.key, by.y=data.key, all.x=TRUE, all.y=FALSE)
   tmp.var <- na.omit(sp@data[,varname])
   if (is.null(at)) at <- pretty(tmp.var,n=nbcuts)
+  if (!is.null(at) && at.lim) {
+    vmax <- max(tmp[,varname], na.rm=TRUE)
+    if (max(at) < vmax) at <- c(at,round(vmax,2))
+    vmin <- min(tmp[,varname], na.rm=TRUE)
+    if (vmin < min(at)) at <- c(round(vmin,2),at)
+  }
   value <- findInterval(sp@data[,varname],at,all.inside=TRUE)
   if (is.null(palette)) {
     palette <- brewer.pal(length(at)-1,palette.pos)

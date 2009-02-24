@@ -1,5 +1,6 @@
 `copie.default` <-
 function (obj, append=FALSE, file=FALSE, filename="temp.html", ...) {
+  require(R2HTML)
   if (file) {
     HTML(obj, file=filename, append=append)
     return

@@ -1,5 +1,6 @@
 `carte.labels` <-
 function (sp, labels, coords=NULL, cex=1, font=2, col="black", outline=FALSE, outline.decal=1, outline.col="white") {
+  require(sp)
   if (is.null(coords)) coords <- coordinates(sp)
   ##coords <- pointLabel(x=coords, labels=labels, font=font, cex=cex, doPlot=FALSE)
   if (outline) {
