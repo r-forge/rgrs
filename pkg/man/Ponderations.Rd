@@ -23,26 +23,26 @@ wtd.table(x, y = NULL, weights = NULL, normwt = FALSE, na.rm = TRUE)
   \item{na.rm}{ Suppression des valeurs manquantes }  
 }
 \details{
-  Si \code{weights} n'est pas fourni, les fonctions utilisent une
+  Si \command{weights} n'est pas fourni, les fonctions utilisent une
   pondération uniforme.
 }
 \value{
-  Pour \code{wtd.table}, si un seul vecteur est fourni la fonction calcule
+  Pour \command{wtd.table}, si un seul vecteur est fourni la fonction calcule
   le tri à plat pondéré de la variables. Si deux vecteurs sont passés en
   paramètres on obtient le tri croisé pondéré des deux variables.
 }
-\author{ Les fonctions \code{wtd.mean} et \code{wtd.var} sont des copies
-  conformes des fonctions du même nom de l'extension \code{Hmisc}. Elles
+\author{ Les fonctions \command{wtd.mean} et \command{wtd.var} sont des copies
+  conformes des fonctions du même nom de l'extension \command{Hmisc}. Elles
   ont été développées par :
   Frank Harrell 
    Department of Biostatistics 
    Vanderbilt University School of Medicine 
    f.harrell@vanderbilt.edu
    
-  Pour \code{wtd.table} : Julien Barnier <julien.barnier@ens-lsh.fr> }
-\seealso{ \code{\link{table}}, \code{\link{mean}}, \code{\link{var}},
-  \code{\link[Hmisc]{wtd.table}}, \code{\link[Hmisc]{wtd.quantile} et
-    l'extension \code{survey}}}
+  Pour \command{wtd.table} : Julien Barnier <julien.barnier@ens-lsh.fr> }
+\seealso{ \command{\link{table}}, \command{\link{mean}}, \command{\link{var}},
+  \command{\link[Hmisc]{wtd.table}}, \command{\link[Hmisc]{wtd.quantile} et
+    l'extension \command{survey}}}
 \examples{
 
 data(hdv2003)

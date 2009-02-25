@@ -16,7 +16,7 @@ mls.export(df, filename)
   \item{filename}{ Nom du fichier d'export }
 }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
-\seealso{  \code{\link{mls.import}} }
+\seealso{  \command{\link{mls.import}} }
 \examples{
 ## Not run:
 \dontrun{mls.export(mydf, "export_modalisa.txt")}

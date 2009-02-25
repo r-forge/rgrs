@@ -13,6 +13,6 @@ rgrs.update()
   contacter le serveur R-forge.
 }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
-\seealso{ \code{\link{update.packages}} }
+\seealso{ \command{\link{update.packages}} }
 \keyword{ utilities }
 

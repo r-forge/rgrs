@@ -4,7 +4,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Export d'un objet proptab au format HTML }
 \description{
-  Applique la fonction générique \code{copie} à un tableau de classe \code{proptab}.
+  Applique la fonction générique \command{copie} à un tableau de classe \command{proptab}.
 }
 \usage{
 \method{copie}{proptab}(obj, percent=NULL, digits=NULL, justify="right", ...)
@@ -16,15 +16,15 @@
     tableau }
   \item{digits}{ nombre de décimales à afficher }
   \item{justify}{ justification du contenu des cellules
-    (\code{"left"}, \code{"right"} ou \code{"centre"}) }
+    (\command{"left"}, \command{"right"} ou \command{"centre"}) }
   \item{...}{ arguments passés à la fonction copie() }
 }
 \details{
   Pour plus d'informations sur les arguments et les résultats de la
-  fonction, se référer à l'aide des fonctions \code{format.proptab} et
-  \code{copie}.
+  fonction, se référer à l'aide des fonctions \command{format.proptab} et
+  \command{copie}.
 }
-\seealso{  \code{\link[rgrs]{copie}}, \code{\link[rgrs]{format.proptab}} }
+\seealso{  \command{\link[rgrs]{copie}}, \command{\link[rgrs]{format.proptab}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{
 data(iris)

@@ -32,7 +32,7 @@ freq(x, digits=1, cum=FALSE, total=FALSE, exclude=NULL, sort="")
   variables, et dont les colonnes sont les effectifs, le pourcentage et
   (si demandé) le pourcentage cumulé de ces modalités.
 }
-\seealso{  \code{\link{table}}, \code{\link{prop}} }
+\seealso{  \command{\link{table}}, \command{\link{prop}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{
 v <- c(round(runif(230,1,5)), NA)

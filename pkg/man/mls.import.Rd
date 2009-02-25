@@ -14,7 +14,7 @@ mls.import(filename, enc = "latin1", modif.names = TRUE)
   \item{filename}{ Nom du fichier à importer }
   \item{enc}{ Encodage du fichier à importer (normalement toujours latin1) }
   \item{modif.names}{ Correction ou non des noms de variables. Si
-    \code{modif.names} vaut TRUE, alors les noms de variables importés
+    \command{modif.names} vaut TRUE, alors les noms de variables importés
     sont convertis en minuscules et les espaces remplacés par des tirets
     bas.}
 }
@@ -22,8 +22,8 @@ mls.import(filename, enc = "latin1", modif.names = TRUE)
   Retourne un data frame contenant les données importées.
 }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
-\seealso{ \code{\link{mls.export}}, \code{\link{mls.eclate.multi}},
-  \code{\link{mls.eclate.ordo}}, \code{\link{mls.table.multi}}  }
+\seealso{ \command{\link{mls.export}}, \command{\link{mls.eclate.multi}},
+  \command{\link{mls.eclate.ordo}}, \command{\link{mls.table.multi}}  }
 \examples{
 ## Not run:
 \dontrun{mydf <- mls.import("export_modalisa.TXT")}

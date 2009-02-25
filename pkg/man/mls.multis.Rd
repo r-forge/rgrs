@@ -18,29 +18,29 @@
 \arguments{
   \item{var}{ Variable correspondant à une question à réponses multiples }
   \item{vname}{ Préfixe à ajouter aux noms des variables générées (si
-    \code{mnames=NULL}) }
+    \command{mnames=NULL}) }
   \item{mnames}{ Noms des variables générées }
   \item{nb}{ Dans le cas de questions à réponses multiples ordonnées,
     nombre de modalités à retenir }
 }
 \details{
-  \code{mls.table.multi} génère le tri à plat des modalités d'une
-  question à réponses multiples. \code{mls.eclate.multi} transforme une
+  \command{mls.table.multi} génère le tri à plat des modalités d'une
+  question à réponses multiples. \command{mls.eclate.multi} transforme une
   question à réponses multiples en autant de questions binaires qu'il y
-  a de modalités. \code{mls.eclate.ordo} fait la même chose pour une
+  a de modalités. \command{mls.eclate.ordo} fait la même chose pour une
   question à réponses multiples ordonnées.
 }
 \value{
-  \code{mls.table.multi} renvoit une table contenant le tri à plat des
+  \command{mls.table.multi} renvoit une table contenant le tri à plat des
   modalités de la question à réponses multiples.
 
-  \code{mls.table.multi} renvoit un data frame avec autant de variables
+  \command{mls.table.multi} renvoit un data frame avec autant de variables
   que la variable initiale a de modalités. Chaque variable créée
-  possède les modalités \code{O} si l'individu correspondant a choisi la
-  modalité, et \code{N} sinon.
+  possède les modalités \command{O} si l'individu correspondant a choisi la
+  modalité, et \command{N} sinon.
 
-  \code{mls.table.ordo} renvoit un data frame semblable à celui généré
-  par \code{mls.table.multi}, mais il se limite aux \code{nb} premières
+  \command{mls.table.ordo} renvoit un data frame semblable à celui généré
+  par \command{mls.table.multi}, mais il se limite aux \command{nb} premières
   modalités.
   
 }
@@ -50,7 +50,7 @@
   conception du questionnaire l'usage de séries de questions binaires.
 }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
-\seealso{ \code{\link{mls.import}} }
+\seealso{ \command{\link{mls.import}} }
 \examples{
 ## Not run:
 \dontrun{

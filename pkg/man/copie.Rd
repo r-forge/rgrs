@@ -41,7 +41,7 @@ copie(obj, ...)
   travail. On peut ensuite l'intégrer directement dans Microsoft Word ou
   OpenOffice Writer via le menu Insertion > Fichier.
 }
-\seealso{  \code{\link[R2HTML]{HTML}}, \code{\link[rgrs]{copie.proptab}} }
+\seealso{  \command{\link[R2HTML]{HTML}}, \command{\link[rgrs]{copie.proptab}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{
 data(iris)

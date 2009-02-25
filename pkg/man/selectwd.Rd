@@ -11,11 +11,11 @@ selectwd()
 }
 \value{
   La fonction renvoit le répertoire choisi sous forme de chaîne de
-  caractères, et affiche la commande \code{setwd} correspondant à la
+  caractères, et affiche la commande \command{setwd} correspondant à la
   sélection effectuée.
 }
 \seealso{
-  \code{\link{setwd}}, \code{\link{getwd}}
+  \command{\link{setwd}}, \command{\link{getwd}}
 }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
 \keyword{utilities}

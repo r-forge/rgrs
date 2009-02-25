@@ -26,7 +26,7 @@ genere.tableau(x, ...)
 \value{
   Renvoit une représentation au format ODF (XML) de l'objet.
 }
-\seealso{  \code{\link[odfWeave]{odfTable}} }
+\seealso{  \command{\link[odfWeave]{odfTable}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \examples{
 ## Not run:

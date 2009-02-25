@@ -25,27 +25,27 @@
   \item{percent}{ Ajout du symbole \% dans chaque case lors de l'affichage du tableau }
 }
 \details{
-  Dans le cas des tableaux contenant des proportions (\code{cprop},
-  \code{lprop}, \code{prop}, \code{thprop}), les options \code{digits}
-  et \code{percent} sont des attributs du tableau résultant qui
-  contrôlent l'affichage du tableau avec \code{print} ou \code{copie}. On peut modifier
+  Dans le cas des tableaux contenant des proportions (\command{cprop},
+  \command{lprop}, \command{prop}, \command{thprop}), les options \command{digits}
+  et \command{percent} sont des attributs du tableau résultant qui
+  contrôlent l'affichage du tableau avec \command{print} ou \command{copie}. On peut modifier
   ponctuellement ces options en les passant directement à
-  \code{\link[rgrs]{print.proptab}} \code{\link[rgrs]{copie.proptab}}. Les données numériques stockées
+  \command{\link[rgrs]{print.proptab}} \command{\link[rgrs]{copie.proptab}}. Les données numériques stockées
   conservent l'intégralité des valeurs décimales.
 }
 \value{
-  \code{cprop} retourne un tableau contenant les pourcentages colonnes,
-  \code{lprop} renvoit un tableau contenant les poiurcentages lignes,
-  \code{prop} renvoit un tableau contenant les pourcentages globaux,
-  \code{thprop} renvoit un tableau de pourcentages théoriques sous
-  l'hypothèse d'indépendance, \code{theff} renvoit un tableau
+  \command{cprop} retourne un tableau contenant les pourcentages colonnes,
+  \command{lprop} renvoit un tableau contenant les poiurcentages lignes,
+  \command{prop} renvoit un tableau contenant les pourcentages globaux,
+  \command{thprop} renvoit un tableau de pourcentages théoriques sous
+  l'hypothèse d'indépendance, \command{theff} renvoit un tableau
   d'effectifs théoriques sous l'hypothèse d'indépendance, et
-  \code{residus} renvoit le tableau des résidus de Pearson.
+  \command{residus} renvoit le tableau des résidus de Pearson.
 }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
-\seealso{ \code{\link{table}}, \code{\link{prop.table}},
-  \code{\link{sweep}}, \code{\link{chisq.test}},
-  \code{\link[rgrs]{print.proptab}}, \code{\link[rgrs]{copie.proptab}}}
+\seealso{ \command{\link{table}}, \command{\link{prop.table}},
+  \command{\link{sweep}}, \command{\link{chisq.test}},
+  \command{\link[rgrs]{print.proptab}}, \command{\link[rgrs]{copie.proptab}}}
 \examples{
 v1 <- factor(round(runif(500,1,4)))
 v2 <- factor(round(runif(500,1,3)))

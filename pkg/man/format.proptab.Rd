@@ -15,14 +15,14 @@
 \arguments{
   \item{x}{ tableau à formater }
   \item{digits}{ indique le nombre de décimales à conserver pour
-    l'affichage. Si \code{NULL}, on utilise l'attribut \code{digits} de \code{x} }
-  \item{percent}{ indique si on doit afficher (\code{TRUE}) ou non
-    (\code{FALSE}) le symbole \% dans chaque case du tableau. Si
-    \code{NULL}, on utilise l'attribut \code{percent} de \code{x} }
+    l'affichage. Si \command{NULL}, on utilise l'attribut \command{digits} de \command{x} }
+  \item{percent}{ indique si on doit afficher (\command{TRUE}) ou non
+    (\command{FALSE}) le symbole \% dans chaque case du tableau. Si
+    \command{NULL}, on utilise l'attribut \command{percent} de \command{x} }
   \item{justify}{ justification du contenu des cellules
-    (\code{"left"}, \code{"right"} ou \code{"centre"}) }
+    (\command{"left"}, \command{"right"} ou \command{"centre"}) }
   \item{...}{ arguments passés à la fonction format() }
 }
-\seealso{  \code{\link[rgrs]{copie.proptab}}, \code{\link[rgrs]{print.proptab}} }
+\seealso{  \command{\link[rgrs]{copie.proptab}}, \command{\link[rgrs]{print.proptab}} }
 \author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
 \keyword{print}
