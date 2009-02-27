@@ -30,6 +30,6 @@
 data(iris)
 tab <- table(cut(iris$Sepal.Length,8),cut(iris$Sepal.Width,4))
 ptab <- lprop(tab, percent=TRUE)
-copie(ptab)
+\dontrun{copie(ptab)}
 }
 \keyword{connection}

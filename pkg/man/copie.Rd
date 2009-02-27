@@ -46,6 +46,6 @@ copie(obj, ...)
 \examples{
 data(iris)
 tab <- table(cut(iris$Sepal.Length,8),cut(iris$Sepal.Width,4))
-copie(tab)
+\dontrun{copie(tab)}
 }
 \keyword{connection}

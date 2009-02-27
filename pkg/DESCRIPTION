@@ -1,8 +1,8 @@
 Package: rgrs
 Type: Package
 Title: Functions to make R usage in social sciences easier (package documentation in french)
-Version: 0.2-6
-Date: 2009-02-25
+Version: 0.2-7
+Date: 2009-02-27
 Author: Julien Barnier
 Maintainer: Julien Barnier <julien.barnier@ens-lsh.fr>
 Description: Fonctions pour faciliter l'usage de R en sciences sociales. Documentation et pages d'aide en français.
