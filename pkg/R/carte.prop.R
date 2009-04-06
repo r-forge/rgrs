@@ -14,16 +14,21 @@ function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, nbcuts=6,
   }
   value <- findInterval(sp@data[,varname],at,all.inside=TRUE)
   if (is.null(palette)) {
-    palette <- brewer.pal(length(at)-1,palette.pos)
     if (diverg) {
       nb.pos <- sum(at>0)
-      if (nb.pos<3) palpos <-  brewer.pal(3,palette.pos)[1:nb.pos]
-      else palpos <- brewer.pal(nb.pos,palette.pos)
-      nb.neg <- sum(at<0)  
-      if (nb.neg<3) palneg <- brewer.pal(3,palette.neg)[1:nb.neg]
-      else palneg <- brewer.pal(nb.neg,palette.neg)
-      palette <- c(rev(palneg),palpos)
+      if (nb.pos>0) {
+        if (nb.pos<3) palpos <-  brewer.pal(3,palette.pos)[1:nb.pos]
+        else palpos <- brewer.pal(nb.pos,palette.pos)
+        palette <- palpos
+      }
+      nb.neg <- sum(at<0)
+      if (nb.neg>0) {
+        if (nb.neg<3) palneg <- brewer.pal(3,palette.neg)[1:nb.neg]
+        else palneg <- brewer.pal(nb.neg,palette.neg)
+        palette <- c(rev(palneg),palette)
+      }
     }
+    else palette <- brewer.pal(length(at)-1,palette.pos)
   }
   cols <- palette[value]
   plot(sp, col=cols, ...)
