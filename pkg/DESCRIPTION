@@ -1,9 +1,9 @@
 Package: rgrs
 Type: Package
 Title: Functions to make R usage in social sciences easier (in french)
-Version: 0.2-9
-Date: 2009-04-06
-Author: Julien Barnier
+Version: 0.2-10
+Date: 2009-06-05
+Author: Julien Barnier <julien.barnier@ens-lsh.fr>
 Maintainer: Julien Barnier <julien.barnier@ens-lsh.fr>
 Description: This package provides functions for beginners and social sciences students or researchers. Currently it includes functions for cross-tabulation, weighting, results export, and maps plotting. The documentation and help pages are written in french.
 License: GPL (>= 2)

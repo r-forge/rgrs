@@ -2,7 +2,7 @@
  function (sp, data, varname,  sp.key="id", data.key="id", nbcuts=4, at=NULL, main="", sub=NULL, posleg="topleft", col.bg="red", col.border="white", cex=5, pch=21, plot.polygons=TRUE, ...) {
   require(sp)
   tmp <- data[,c(data.key, varname)]
-  sp@data <- merge(sp@data, tmp, by.x=sp.key, by.y=data.key, all.x=TRUE, all.y=FALSE)
+  sp@data <- merge(sp@data, tmp, by.x=sp.key, by.y=data.key, all.x=TRUE, all.y=FALSE, sort=FALSE)
   tmp.var <- na.omit(sp@data[,varname])
   if(plot.polygons) plot(sp, col="white", ...)
   coords <- coordinates(sp)

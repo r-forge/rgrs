@@ -3,7 +3,7 @@ function (sp, data, varname, sp.key="id", data.key="id", main="", sub=NULL, posl
   require(sp)
   require(RColorBrewer)
   tmp <- data[,c(data.key, varname)]
-  sp@data <- merge(sp@data, tmp, by.x=sp.key, by.y=data.key, all.x=TRUE, all.y=FALSE)
+  sp@data <- merge(sp@data, tmp, by.x=sp.key, by.y=data.key, all.x=TRUE, all.y=FALSE, sort=FALSE)
   tmp.var <- na.omit(sp@data[,varname])
   qual.names <- sort(unique(data[,varname]))
   qual.nb <- length(qual.names)
