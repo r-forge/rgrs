@@ -40,5 +40,6 @@ function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, nbcuts=6,
   }    
   title(main,sub,line=1)
   box()
-  carte.prop.legende(posleg=posleg, at, palette, na.leg=na.leg)
+  if (posleg != "none" && !is.null(posleg))  
+    carte.prop.legende(posleg=posleg, at, palette, na.leg=na.leg)
 }

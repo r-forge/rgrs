@@ -49,7 +49,8 @@ carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
   \item{main}{titre de la carte.}
   \item{sub}{sous-titre de la carte.}
   \item{posleg}{position de la légende, à indiquer de la même manière
-    que pour \command{legend}.}
+    que pour \command{legend}. Si l'argument vaut "none" ou NULL, aucune
+    légende n'est affichée.}
   \item{col.bg}{couleur des symboles pour \command{carte.eff}.}
   \item{col.border}{couleur de la bordure des symboles pour
     \command{carte.eff}.}

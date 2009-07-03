@@ -19,5 +19,6 @@ function (sp, data, varname, sp.key="id", data.key="id", main="", sub=NULL, posl
   }
   title(main,sub,line=1)
   box()
-  carte.qual.legende(posleg=posleg, qual.names, palette, na.leg=na.leg)
+  if (posleg != "none" && !is.null(posleg))
+    carte.qual.legende(posleg=posleg, qual.names, palette, na.leg=na.leg)
 }

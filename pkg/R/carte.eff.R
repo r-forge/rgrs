@@ -15,6 +15,7 @@
     at <- pretty(tmp.var,n=nbcuts)
     at[length(at)] <- max(tmp.var)
   }
-  carte.eff.legende(posleg=posleg, at, cex.leg=cex, col.bg=col.bg, col.border=col.border, pch=pch)
+  if (posleg != "none" && !is.null(posleg))
+    carte.eff.legende(posleg=posleg, at, cex.leg=cex, col.bg=col.bg, col.border=col.border, pch=pch)
 }
 
