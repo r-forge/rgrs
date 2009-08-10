@@ -15,8 +15,9 @@
 }
 \usage{
 carte.prop(sp, data, varname, sp.key="id", data.key="id", diverg=FALSE,
-           nbcuts=6, at=NULL, at.lim=FALSE, main="", sub=NULL, posleg="topleft",
-           palette.pos="Reds", palette.neg="Blues", palette=NULL, ...)
+           diverg.zero=0, nbcuts=6, at=NULL, at.lim=FALSE, main="",
+           sub=NULL, posleg="topleft", palette.pos="Reds",
+           palette.neg="Blues", palette=NULL, ...)
 
 carte.eff(sp, data, varname, sp.key="id", data.key="id", nbcuts=4,
           at=NULL, main="", sub=NULL, posleg="topleft", col.bg="red",
@@ -39,6 +40,10 @@ carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
   \item{diverg}{si TRUE, les données comportent à la fois des valeurs
     positives et négatives, à représenter dans des schémas de couleur
     différents.}
+  \item{diverg.zero}{si diverg vaut TRUE, valeur qui définit la limite
+    pour laquelle les valeurs sont positives ou négatives (0 en général
+    par défaut, mais on peut la positionner à 1 pour une carte
+    représentant un ratio par exemple).}
   \item{nbcuts}{nombre de classes de valeurs pour la légende
     (\command{carte.eff}) et pour les couleurs (\command{carte.prop}).}
   \item{at}{bornes des classes de valeurs pour la légende

@@ -1,5 +1,5 @@
 `carte.prop` <-
-function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, nbcuts=6, at=NULL, at.lim=FALSE, main="", sub=NULL, posleg="topleft", palette.pos="Reds", palette.neg="Blues", palette=NULL, ...) {
+function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, diverg.zero = 0, nbcuts=6, at=NULL, at.lim=FALSE, main="", sub=NULL, posleg="topleft", palette.pos="Reds", palette.neg="Blues", palette=NULL, ...) {
   tmp <- data[,c(data.key, varname)]
   require(sp)
   require(RColorBrewer)
@@ -15,13 +15,13 @@ function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, nbcuts=6,
   value <- findInterval(sp@data[,varname],at,all.inside=TRUE)
   if (is.null(palette)) {
     if (diverg) {
-      nb.pos <- sum(at>0)
+      nb.pos <- sum(at>diverg.zero)
       if (nb.pos>0) {
         if (nb.pos<3) palpos <-  brewer.pal(3,palette.pos)[1:nb.pos]
         else palpos <- brewer.pal(nb.pos,palette.pos)
         palette <- palpos
       }
-      nb.neg <- sum(at<0)
+      nb.neg <- sum(at<diverg.zero)
       if (nb.neg>0) {
         if (nb.neg<3) palneg <- brewer.pal(3,palette.neg)[1:nb.neg]
         else palneg <- brewer.pal(nb.neg,palette.neg)
