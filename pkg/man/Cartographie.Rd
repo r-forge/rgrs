@@ -1,8 +1,5 @@
 \encoding{UTF-8}
 \name{Cartographie}
-\alias{carte.prop.legende}
-\alias{carte.eff.legende}
-\alias{carte.qual.legende}
 \alias{carte.prop}
 \alias{carte.eff}
 \alias{carte.qual}
@@ -17,14 +14,16 @@
 carte.prop(sp, data, varname, sp.key="id", data.key="id", diverg=FALSE,
            diverg.zero=0, nbcuts=6, at=NULL, at.lim=FALSE, main="",
            sub=NULL, posleg="topleft", palette.pos="Reds",
-           palette.neg="Blues", palette=NULL, ...)
+           palette.neg="Blues", palette=NULL, leg.options=NULL, ...)
 
 carte.eff(sp, data, varname, sp.key="id", data.key="id", nbcuts=4,
           at=NULL, main="", sub=NULL, posleg="topleft", col.bg="red",
-          col.border="white", cex=5, pch=21, plot.polygons=TRUE, ...)
+          col.border="white", cex=5, pch=21, plot.polygons=TRUE,
+          leg.options=NULL, ...)
 
 carte.qual(sp, data, varname, sp.key="id", data.key="id", main="", sub=NULL,
-           posleg="topleft",  palette.qual="Set3", palette=NULL, ...)
+           posleg="topleft",  palette.qual="Set3", palette=NULL,
+           leg.options=NULL, ...)
 
 carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
              outline=FALSE, outline.decal=1, outline.col="white")
@@ -76,13 +75,15 @@ carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
   \item{palette}{palette de couleur spécifiée manuellement.}
   \item{labels}{vecteur de chaines de caractère contenant les labels à écrire.}  
   \item{coords}{coordonnées de positionnement des labels. Si NULL, les
-  coordonnées sont calculées en fonction de la forme de chaque polygone.}
+    coordonnées sont calculées en fonction de la forme de chaque polygone.}
   \item{col}{couleur des labels.}
   \item{font}{type de police utilisée pour les labels. Voir \command{\link{par}}.}
   \item{outline}{si TRUE, une bordure est affichée autour des labels.} 
   \item{outline.decal}{décalage à utiliser pour les bordures de labels.}
   \item{outline.col}{couleur pour les bordures de labels.}   
   \item{...}{paramètres supplémentaires passés à \command{spplot}.}
+  \item{leg.options}{Liste de paramètres supplémentaires passée à la
+    fonction d'affichage de la légende correspondante.}
 }
 \details{
   Pour la manière de spécifier des palettes à RColorBrewer, on pourra
@@ -94,13 +95,19 @@ carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
   palette spécifiée ne dispose pas de suffisamment de couleurs. Il faut
   alors soit réduire le nombre de classes, soit choisir une autre
   palette, soit spécifier une palette manuellement.
+
+  Les arguments supplémentaires passés à la fonction d'affichage de la
+  légende doivent l'être sous la forme d'une liste, par exemple
+  \command{leg.options=list(na.string="Manquant")}.
 }
 \value{
   Affiche la carte et la légende correspondantes. Ne retourne pas de
   valeur particulière.
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
-\seealso{ \command{\link[sp]{spplot}}, \command{\link{legend}},
+\author{ Julien Barnier <julien.barnier@ens-lsh.fr>, Joël Gombin <joel.gombin@gmail.com> }
+\seealso{  \command{\link{carte.prop.legende}},
+  \command{\link{carte.eff.legende}},
+  \command{\link{carte.qual.legende}}, \command{\link[sp]{spplot}}, \command{\link{legend}},
   \command{\link[RColorBrewer]{brewer.pal}}, \command{\link{palette}}, \command{\link{par}} }
 \examples{
 data(lyon)
