@@ -1,5 +1,5 @@
 `carte.eff` <-
- function (sp, data, varname,  sp.key="id", data.key="id", nbcuts=4, at=NULL, main="", sub=NULL, posleg="topleft", col.bg="red", col.border="white", cex=5, pch=21, plot.polygons=TRUE, ...) {
+ function (sp, data, varname,  sp.key="id", data.key="id", nbcuts=4, at=NULL, main="", sub=NULL, posleg="topleft", col.bg="red", col.border="white", cex=5, pch=21, plot.polygons=TRUE, leg.options=NULL, ...) {
   require(sp)
   tmp <- data[,c(data.key, varname)]
   ## Creation d'une variable temporaire pour recuperer l'ordre initial apres le merge
@@ -19,7 +19,10 @@
     at <- pretty(tmp.var,n=nbcuts)
     at[length(at)] <- max(tmp.var)
   }
-  if (posleg != "none" && !is.null(posleg))
-    carte.eff.legende(posleg=posleg, at, cex.leg=cex, col.bg=col.bg, col.border=col.border, pch=pch)
+  if (posleg != "none" && !is.null(posleg)) {
+    leg.default.options <- list(at, posleg=posleg, cex.leg=cex, col.bg=col.bg, col.border=col.border, pch=pch)
+    leg.args <- c(leg.default.options, leg.options)
+    do.call(carte.eff.legende, leg.args, quote=TRUE) 
+  }
 }
 

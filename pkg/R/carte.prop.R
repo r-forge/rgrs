@@ -1,5 +1,5 @@
 `carte.prop` <-
-function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, diverg.zero = 0, nbcuts=6, at=NULL, at.lim=FALSE, main="", sub=NULL, posleg="topleft", palette.pos="Reds", palette.neg="Blues", palette=NULL, ...) {
+function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, diverg.zero = 0, nbcuts=6, at=NULL, at.lim=FALSE, main="", sub=NULL, posleg="topleft", palette.pos="Reds", palette.neg="Blues", palette=NULL, leg.options=NULL, ...) {
   require(sp)
   require(RColorBrewer)
   tmp <- data[,c(data.key, varname)]
@@ -44,7 +44,9 @@ function (sp, data, varname, sp.key="id", data.key="id", diverg=FALSE, diverg.ze
   }    
   title(main,sub,line=1)
   box()
-  if (posleg != "none" && !is.null(posleg))  
-    carte.prop.legende(posleg=posleg, at, palette, na.leg=na.leg)
+  if (posleg != "none" && !is.null(posleg)) {
+    leg.default.options <- list(at, palette, posleg=posleg, na.leg=na.leg)
+    leg.args <- c(leg.default.options, leg.options)
+    do.call(carte.prop.legende, leg.args) 
   }
 }

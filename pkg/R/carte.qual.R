@@ -1,5 +1,5 @@
 `carte.qual` <-
-function (sp, data, varname, sp.key="id", data.key="id", main="", sub=NULL, posleg="topleft", palette.qual="Set3", palette=NULL, ...) {
+function (sp, data, varname, sp.key="id", data.key="id", main="", sub=NULL, posleg="topleft", palette.qual="Set3", palette=NULL, leg.options=NULL, ...) {
   require(sp)
   require(RColorBrewer)
   tmp <- data[,c(data.key, varname)]
@@ -23,6 +23,10 @@ function (sp, data, varname, sp.key="id", data.key="id", main="", sub=NULL, posl
   }
   title(main,sub,line=1)
   box()
-  if (posleg != "none" && !is.null(posleg))
-    carte.qual.legende(posleg=posleg, qual.names, palette, na.leg=na.leg)
+  if (posleg != "none" && !is.null(posleg)) {
+    leg.default.options <- list(qual.names, palette, posleg=posleg, na.leg=na.leg)
+    leg.args <- c(leg.default.options, leg.options)
+    do.call(carte.qual.legende, leg.args) 
+  }
+
 }
