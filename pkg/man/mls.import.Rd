@@ -21,7 +21,7 @@ mls.import(filename, enc = "latin1", modif.names = TRUE)
 \value{
   Retourne un data frame contenant les données importées.
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \seealso{ \command{\link{mls.export}}, \command{\link{mls.eclate.multi}},
   \command{\link{mls.eclate.ordo}}, \command{\link{mls.table.multi}}  }
 \examples{

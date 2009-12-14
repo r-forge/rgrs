@@ -15,7 +15,7 @@ mls.export(df, filename)
   \item{df}{ data frame à exporter }
   \item{filename}{ Nom du fichier d'export }
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \seealso{  \command{\link{mls.import}} }
 \examples{
 ## Not run:

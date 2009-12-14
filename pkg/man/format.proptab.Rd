@@ -24,5 +24,5 @@
   \item{...}{ arguments passés à la fonction format() }
 }
 \seealso{  \command{\link[rgrs]{copie.proptab}}, \command{\link[rgrs]{print.proptab}} }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
 \keyword{print}

@@ -104,7 +104,7 @@ carte.labels(sp, labels, coords=NULL, cex=1, font=2, col="black",
   Affiche la carte et la légende correspondantes. Ne retourne pas de
   valeur particulière.
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>, Joël Gombin <joel.gombin@gmail.com> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>, Joël Gombin <joel.gombin@gmail.com> }
 \seealso{  \command{\link{carte.prop.legende}},
   \command{\link{carte.eff.legende}},
   \command{\link{carte.qual.legende}}, \command{\link[sp]{spplot}}, \command{\link{legend}},

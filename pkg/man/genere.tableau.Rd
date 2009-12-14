@@ -27,7 +27,7 @@ genere.tableau(x, ...)
   Renvoit une représentation au format ODF (XML) de l'objet.
 }
 \seealso{  \command{\link[odfWeave]{odfTable}} }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
 \examples{
 ## Not run:
 \dontrun{

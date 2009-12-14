@@ -49,7 +49,7 @@
   questions à réponses multiples dans Modalisa, et de privilégier dès la
   conception du questionnaire l'usage de séries de questions binaires.
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \seealso{ \command{\link{mls.import}} }
 \examples{
 ## Not run:

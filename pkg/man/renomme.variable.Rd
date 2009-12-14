@@ -18,7 +18,7 @@ renomme.variable(df, old, new)
 \value{
   Renvoit un tableau de données avec la colonne indiquée renommée
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \examples{
 data(iris)
 str(iris)

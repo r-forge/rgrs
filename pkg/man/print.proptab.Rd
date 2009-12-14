@@ -23,7 +23,7 @@
   \item{...}{ arguments passés à la fonction print.table() }
 }
 \seealso{  \command{\link[rgrs]{format.proptab}}, \command{\link[rgrs]{Profils}}, \command{\link{print}} }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
 \examples{
 tab <- table(x=round(runif(100,1,3)),y=round(runif(100,1,5)))
 ptab <- lprop(tab, digits=1, percent=TRUE)

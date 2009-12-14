@@ -39,7 +39,7 @@ wtd.table(x, y = NULL, weights = NULL, normwt = FALSE, na.rm = TRUE)
    Vanderbilt University School of Medicine 
    f.harrell@vanderbilt.edu
    
-  Pour \command{wtd.table} : Julien Barnier <julien.barnier@ens-lsh.fr> }
+  Pour \command{wtd.table} : Julien Barnier <julien.barnier@ens-lyon.fr> }
 \seealso{ \command{\link{table}}, \command{\link{mean}}, \command{\link{var}},
   \command{\link[Hmisc]{wtd.table}}, \command{\link[Hmisc]{wtd.quantile} et
     l'extension \command{survey}}}

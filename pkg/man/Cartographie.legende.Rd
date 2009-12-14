@@ -59,7 +59,7 @@ carte.eff.legende(posleg="bottomleft", at, cex.leg, inset=c(0.02,0.02),
   Affiche la légende correspondante. Ne retourne pas de
   valeur particulière.
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \seealso{
   \command{\link{carte.prop}}, \command{\link{carte.eff}},
   \command{\link{carte.qual}}, \command{\link{legend}},

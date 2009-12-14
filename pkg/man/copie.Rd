@@ -42,7 +42,7 @@ copie(obj, ...)
   OpenOffice Writer via le menu Insertion > Fichier.
 }
 \seealso{  \command{\link[R2HTML]{HTML}}, \command{\link[rgrs]{copie.proptab}} }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
 \examples{
 data(iris)
 tab <- table(cut(iris$Sepal.Length,8),cut(iris$Sepal.Width,4))

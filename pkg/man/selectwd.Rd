@@ -17,5 +17,5 @@ selectwd()
 \seealso{
   \command{\link{setwd}}, \command{\link{getwd}}
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \keyword{utilities}

@@ -12,7 +12,7 @@ rgrs.update()
   Nécessite d'avoir une connexion à Internet active pour pouvoir
   contacter le serveur R-forge.
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \seealso{ \command{\link{update.packages}} }
 \keyword{ utilities }
 

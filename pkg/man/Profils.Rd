@@ -42,7 +42,7 @@
   d'effectifs théoriques sous l'hypothèse d'indépendance, et
   \command{residus} renvoit le tableau des résidus de Pearson.
 }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr> }
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr> }
 \seealso{ \command{\link{table}}, \command{\link{prop.table}},
   \command{\link{sweep}}, \command{\link{chisq.test}},
   \command{\link[rgrs]{print.proptab}}, \command{\link[rgrs]{copie.proptab}}}

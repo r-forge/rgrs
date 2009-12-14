@@ -33,7 +33,7 @@ freq(x, digits=1, cum=FALSE, total=FALSE, exclude=NULL, sort="")
   (si demandé) le pourcentage cumulé de ces modalités.
 }
 \seealso{  \command{\link{table}}, \command{\link{prop}} }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
 \examples{
 v <- c(round(runif(230,1,5)), NA)
 freq(v)

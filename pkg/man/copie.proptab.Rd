@@ -25,7 +25,7 @@
   \command{copie}.
 }
 \seealso{  \command{\link[rgrs]{copie}}, \command{\link[rgrs]{format.proptab}} }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
 \examples{
 data(iris)
 tab <- table(cut(iris$Sepal.Length,8),cut(iris$Sepal.Width,4))

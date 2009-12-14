@@ -24,7 +24,7 @@ quant.cut(var, nbclass, include.lowest=TRUE, right=FALSE, dig.lab=5, ...)
   Renvoit un vecteur de type factor généré par cut
 }
 \seealso{  \command{\link{cut}}, \command{\link{quantile}} }
-\author{ Julien Barnier <julien.barnier@ens-lsh.fr>}
+\author{ Julien Barnier <julien.barnier@ens-lyon.fr>}
 \examples{
 data(iris)
 sepal.width3cl <- quant.cut(iris$Sepal.Width,3)
